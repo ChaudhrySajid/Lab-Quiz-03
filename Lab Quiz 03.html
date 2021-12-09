@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,
+initial-scale=1">
+<style>
+.container {
+position: relative;
+width: 50%;
+}
+.image {
+display: block;
+width: 50%;
+height: auto;
+}
+.image1 {
+display: block;
+width: 100%;
+height: auto;
+}
+.overlay {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+width: 50%;
+opacity: 0;
+transition: .5s ease;
+}
+.container:hover .overlay {
+opacity: 1;
+}
+.text {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
+</style>
+</head>
+<body>
+<h2>Fade in Overlay</h2>
+<p>Hover over the image to see the effect.</p>
+<div class="container">
+<img src="file:///C:/Users/Chaudhry%20Sajid/Downloads/Sajid32518.png" alt="Avatar"
+class="image">
+<div class="overlay">
+<img src="file:///C:/Users/Chaudhry%20Sajid/Downloads/Chaudhry.jpeg" alt=""
+class="image1">
+</div>
+</div>
+
+<table id="myTable">
+<tr>
+<td><button type="button" name="button"
+onclick="txt1f()" >Personal Info</button></td>
+<td><div id="txt1">
+Name : Chaudhry Sajid
+ID : 32518
+</div>
+</td>
+</tr>
+<tr>
+<td><button type="button" name="button"
+onclick="txt2f()">Education</button></td>
+<td><div id="txt2">
+Education : BSCS
+</div>
+</td>
+</tr>
+<tr>
+<td><button type="button" name="button"
+onclick="txt3f()">Experience</button></td>
+<td><div id="txt3">
+Experience: Software Engineer
+</div>
+</td>
+</tr>
+</table>
+<br>
+<script>
+function txt1f() {
+var x = document.getElementById("txt1");
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}
+function txt2f() {
+var x = document.getElementById("txt2");
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}
+function txt3f() {
+var x = document.getElementById("txt3");
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}
+</script>
+</body>
+</html>
